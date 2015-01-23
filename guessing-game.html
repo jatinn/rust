@@ -999,7 +999,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var toc = document.getElementById('toc').getElementsByTagName('a');
   var href = document.location.pathname.split('/').pop();
-  if (href === 'index.html') {
+  if (href === 'index.html' || href === '') {
     href = 'README.html';
   }
 
